@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="50dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/green"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="72dp"
+                        android:layout_height="79dp"
+                        android:layout_marginStart="28dp"
+                        android:layout_marginTop="28dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/user_1" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="145dp"
+                        android:layout_height="33dp"
+                        android:layout_marginStart="20dp"
+                        android:text="Hi, Alex"
+                        android:textColor="@color/white"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+                        app:layout_constraintStart_toEndOf="@+id/imageView3"
+                        app:layout_constraintTop_toTopOf="@+id/imageView3"
+                        app:layout_constraintVertical_bias="0.913" />
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="51dp"
+                        android:layout_height="42dp"
+                        android:layout_marginEnd="16dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/imageView3"
+                        app:layout_constraintVertical_bias="0.0"
+                        app:srcCompat="@drawable/notification" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Make yourself better !"
+                    android:textColor="@color/white"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="192dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/profileCard"
+                        android:layout_width="100dp"
+                        android:layout_height="120dp"
+                        android:layout_margin="10dp"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="3dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_margin="16dp"
+                                android:background="@drawable/circle_background">
+
+                                <ImageView
+                                    android:id="@+id/imageViewmedication"
+                                    android:layout_width="41dp"
+                                    android:layout_height="38dp"
+
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:srcCompat="@drawable/favorites" />
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <TextView
+                                android:id="@+id/textView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Profile"
+                                android:textAlignment="center"
+                                android:textColor="@color/dark_blue"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/timerCard"
+                        android:layout_width="100dp"
+                        android:layout_height="120dp"
+                        android:layout_margin="10dp"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="3dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_margin="16dp"
+                                android:background="@drawable/circle_background">
+
+                                <ImageView
+                                    android:id="@+id/imageViewtimer"
+                                    android:layout_width="54dp"
+                                    android:layout_height="54dp"
+
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="1.0"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintVertical_bias="0.0"
+                                    app:srcCompat="@drawable/timer" />
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <TextView
+                                android:id="@+id/textViewtimer"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Timer"
+                                android:textAlignment="center"
+                                android:textColor="@color/dark_blue"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/imageView5"
+                                android:layout_width="9dp"
+                                android:layout_height="1dp"
+                                android:scaleType="fitXY"
+
+                                app:srcCompat="@drawable/arc_2" />
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+
+                        android:layout_width="100dp"
+                        android:layout_height="120dp"
+                        android:layout_margin="10dp"
+                        app:cardCornerRadius="10dp"
+                        android:id="@+id/journalCard"
+                        app:cardElevation="3dp">
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_margin="16dp"
+                                android:background="@drawable/circle_background">
+
+                                <ImageView
+                                    android:id="@+id/imageView6"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.0"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintVertical_bias="1.0"
+                                    app:srcCompat="@drawable/journal" />
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <TextView
+                                android:id="@+id/textViewjournal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Journal"
+                                android:textAlignment="center"
+                                android:textColor="@color/dark_blue"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="461dp">
+
+                <TextView
+                    android:id="@+id/textViewcalendar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Upcoming Events"
+                    android:textAlignment="center"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="26sp"
+                    android:textStyle="bold"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="426dp"
+                    android:layout_height="404dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="32dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.625"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView5"
+                    app:layout_constraintVertical_bias="1.0"
+                    tools:ignore="NotSibling">
+
+                    <CalendarView
+                        android:id="@+id/calendarView"
+                        android:layout_width="451dp"
+                        android:layout_height="426dp"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+</androidx.constraintlayout.widget.ConstraintLayout>

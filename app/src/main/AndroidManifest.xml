@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.RehabReady"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".activity_medication"
+            android:exported="false"
+            android:label="activity_medication"
+            android:theme="@style/Theme.RehabReady"/>
+        <activity
+            android:name=".AddMedication"
+            android:exported="false"
+            android:label="activity_medication"
+            android:theme="@style/Theme.RehabReady"/>
+        <activity
+            android:name=".calendar"
+            android:exported="false"
+            android:label="@string/title_activity_calendar"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".JournalEntryActivity"
+            android:exported="false"
+            android:label="@string/title_activity_journal"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".IntroActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MedicationNotes"
+            android:exported="false" />
+        <activity
+            android:name=".MyMedications"
+            android:exported="false" />
+        <activity
+            android:name=".QuizActivity"
+            android:exported="false" />
+        <activity
+            android:name=".QuizQuestion"
+            android:exported="false" />
+        <activity
+            android:name=".QuizQuestionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".QuizResultActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Settings"
+            android:exported="false" />
+        <activity
+            android:name=".SummaryActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".AddTimerActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+    </application>
+
+</manifest>

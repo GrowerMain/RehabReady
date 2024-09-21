@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/ic_bg"
+tools:context=".QuizActivity"
+android:gravity="center"
+android:orientation="vertical">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="30dp"
+    android:gravity="center"
+    android:text="Quizzes Available"
+    android:textColor="@color/white"
+    android:textSize="25sp"
+    android:textStyle="bold" />
+
+<com.google.android.material.card.MaterialCardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    app:cardCornerRadius="8dp"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_psychological_quiz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Psychological Quiz"
+            android:background="@color/design_default_color_primary"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_self_help_quiz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Self Help Quiz"
+            android:background="@color/design_default_color_primary"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_feelings_journal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Feelings Journal"
+            android:background="@color/design_default_color_primary"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_journal">
+
+    <activity
+        android:id="@+id/navigation_calendar"
+        android:name="com.example.rehabready.calendar"
+        android:label="Calendar"
+        tools:layout="@layout/activity_main" />
+
+    <!-- Define other activities similarly -->
+    <activity
+        android:id="@+id/navigation_journal"
+        android:name="com.example.rehabready.JournalEntryActivity"
+        android:label="Timer"
+        tools:layout="@layout/activity_journal" />
+
+    <activity
+        android:id="@+id/navigation_quiz"
+        android:name="com.example.rehabready.timer"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/activity_quiz" />
+
+</navigation>
